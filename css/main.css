@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: "Libre Franklin", sans-serif;
+}
+body .container {
+  max-width: 991px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+body a {
+  color: #E9EFFF;
+}
+body h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+body h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+body h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 40px;
+}
+body h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+body header .header-top {
+  background-color: #6776ED;
+}
+body header .header-top nav label {
+  display: none;
+}
+body header .header-top nav #burger {
+  visibility: hidden;
+  position: absolute;
+}
+body header .header-top nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body header .header-top nav ul li {
+  margin-right: 2em;
+  padding-bottom: 5px;
+  font-size: 20px;
+  line-height: 50px;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+body header .header-top nav ul li:hover {
+  background-size: 100% 2px;
+}
+body header .header-intro {
+  color: #171E3F;
+  height: 450px;
+  background-color: #fff;
+  background-image: url(../img/man.png);
+  background-position: 80% 10%;
+  background-repeat: no-repeat;
+  background-size: 500px auto;
+  padding-top: 150px;
+}
+body header .header-intro h3 {
+  margin-top: 30px;
+}
+body header .header-intro button {
+  margin-top: 20px;
+  padding: 13px 20px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+body main section {
+  text-align: center;
+  padding: 50px 0;
+}
+body main .about {
+  background-color: #FFCC8A;
+}
+body main .about h2 {
+  margin-bottom: 50px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 20px;
+}
+body main .about .desc {
+  display: flex;
+  justify-content: space-between;
+}
+body main .about .desc h3 {
+  margin-bottom: 20px;
+}
+body main .about .desc .photo {
+  width: 200px;
+  height: 200px;
+  background-color: #BCCCFF;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin: 0 50px;
+}
+body main .about .desc .photo img {
+  width: 100%;
+}
+body main .skills {
+  background-color: #fff;
+  color: #000;
+}
+body main .skills h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #FFCC8A;
+}
+body main .skills .skills-list {
+  display: flex;
+  justify-content: space-between;
+}
+body main .skills .skills-list div {
+  width: 45%;
+}
+body main .skills .skills-list h3 {
+  margin-bottom: 40px;
+}
+body main .skills .skills-list ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body main .skills .skills-list ul li {
+  padding: 5px;
+}
+body main .portfolio {
+  background-color: #BCCCFF;
+}
+body main .portfolio h2 {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #fff;
+}
+body main .portfolio .myworks ul li {
+  border-radius: 10px;
+  background-color: #E9EFFF;
+  min-height: 300px;
+  width: 70%;
+  margin: 20px auto;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+body main .portfolio .myworks ul li:nth-child(1) {
+  background-image: url(../img/hazze.png);
+}
+body main .portfolio .myworks ul li:nth-child(3) {
+  background-image: url(../img/cinema.png);
+}
+body main .portfolio .myworks ul li:nth-child(2) {
+  background-image: url(../img/todo.png);
+}
+body main .portfolio .myworks ul li .project-hidden {
+  opacity: 0;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-out;
+}
+body main .portfolio .myworks ul li .project-hidden p {
+  margin-top: 40px;
+}
+body main .portfolio .myworks ul li .project-hidden button {
+  padding: 5px 15px;
+  margin: 40px 5px 0 5px;
+  box-sizing: border-box;
+}
+body main .portfolio .myworks ul li .project-hidden button:hover {
+  padding: 4px 14px;
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+}
+body main .portfolio .myworks ul li:hover .project-hidden {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+body footer {
+  background-color: #6776ED;
+  text-align: center;
+  padding: 20px;
+}
+@keyframes socialbg {
+  from {
+    top: 100px;
+    left: 100px;
+  }
+  50% {
+    top: -60px;
+    left: -60px;
+  }
+  to {
+    top: -40px;
+    left: -40px;
+  }
+}
+body footer .social ul {
+  display: flex;
+  justify-content: center;
+}
+body footer .social ul li {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  line-height: 40px;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+body footer .social ul li::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  border-radius: 10px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 0;
+}
+body footer .social ul li.telegram::before {
+  background: #0088cc;
+}
+body footer .social ul li.vk::before {
+  background: #4c75a3;
+}
+body footer .social ul li.instagram::before {
+  background: linear-gradient(0deg, #f09433 30%, #e6683c 40%, #dc2743 50%, #cc2366 55%, #bc1888 60%);
+}
+body footer .social ul li a {
+  color: #6776ED;
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  left: 25%;
+}
+body footer .social ul li:hover::before {
+  animation: socialbg 1s ease-out;
+  animation-fill-mode: forwards;
+}
+body footer .social ul li:hover a {
+  color: #fff;
+}
+body footer .copyright {
+  margin: 20px 0;
+}
+
+/* Large desktops and laptops */
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px) {
+  body header .header-top nav {
+    display: block;
+  }
+  body header .header-top nav label {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+  body header .header-top nav input#burger:checked + ul {
+    flex-direction: column;
+  }
+  body header .header-top nav input#burger:checked + ul li {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    line-height: 50px;
+    transition: all 0.3s ease;
+  }
+  body header .header-top nav ul {
+    justify-content: center;
+  }
+  body header .header-top nav ul li {
+    font-size: 0px;
+    line-height: 0px;
+  }
+  body header .header-intro {
+    padding-top: 50px;
+    background-position: 80% 180%;
+    background-size: auto 90%;
+  }
+
+  .about h2 {
+    margin-bottom: 0 !important;
+  }
+  .about .desc {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about .desc div {
+    margin: 50px 0;
+  }
+  .about .desc .about-me {
+    margin-bottom: 0;
+  }
+
+  .skills .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills .skills-list div {
+    margin-top: 60px;
+    width: 60% !important;
+  }
+  .skills .skills-list .hard-skills h3, .skills .skills-list .soft-skills h3 {
+    margin-bottom: 20px;
+  }
+  .skills .skills-list .soft-skills ul {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio .myworks ul li {
+    width: 100% !important;
+  }
+}
+/* Portrait phones and smaller */
+/* Iphone 5 */
