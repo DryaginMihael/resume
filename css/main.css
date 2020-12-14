@@ -145,13 +145,13 @@ body header .header-intro {
   background-size: 500px auto;
   padding-top: 150px;
 }
-body header .header-intro h3 {
+body header .header-intro h3:first-of-type {
   margin-top: 30px;
 }
 body header .header-intro button {
   margin-top: 20px;
   padding: 13px 20px;
-  background-color: #000;
+  background-color: #171E3F;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
@@ -161,6 +161,7 @@ body main section {
   padding: 50px 0;
 }
 body main .about {
+  color: #171E3F;
   background-color: #FFCC8A;
 }
 body main .about h2 {
@@ -169,8 +170,8 @@ body main .about h2 {
   padding-bottom: 20px;
 }
 body main .about .desc {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 240px 1fr;
 }
 body main .about .desc h3 {
   margin-bottom: 20px;
@@ -182,14 +183,14 @@ body main .about .desc .photo {
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
-  margin: 0 50px;
+  margin: 0 20px;
 }
 body main .about .desc .photo img {
   width: 100%;
 }
 body main .skills {
   background-color: #fff;
-  color: #000;
+  color: #171E3F;
 }
 body main .skills h2 {
   margin-bottom: 20px;
@@ -234,15 +235,15 @@ body main .portfolio .myworks ul li {
 body main .portfolio .myworks ul li:nth-child(1) {
   background-image: url(../img/hazze.png);
 }
-body main .portfolio .myworks ul li:nth-child(3) {
+body main .portfolio .myworks ul li:nth-child(2) {
   background-image: url(../img/cinema.png);
 }
-body main .portfolio .myworks ul li:nth-child(2) {
+body main .portfolio .myworks ul li:nth-child(3) {
   background-image: url(../img/todo.png);
 }
 body main .portfolio .myworks ul li .project-hidden {
   opacity: 0;
-  padding: 50px;
+  padding: 70px;
   width: 100%;
   height: 100%;
   transition: all 0.3s ease-out;
@@ -264,6 +265,7 @@ body main .portfolio .myworks ul li .project-hidden button:hover {
 body main .portfolio .myworks ul li:hover .project-hidden {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.7);
+  height: 1000%;
 }
 body footer {
   background-color: #6776ED;
@@ -378,9 +380,10 @@ body footer .copyright {
     margin-bottom: 0 !important;
   }
   .about .desc {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    grid-template-columns: 1fr !important;
+  }
+  .about .desc .photo {
+    margin: 0 auto !important;
   }
   .about .desc div {
     margin: 50px 0;

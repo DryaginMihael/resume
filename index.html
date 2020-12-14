@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/e3bb7996ba.js" crossorigin="anonymous"></script>
-    <title>Resume</title>
+    <link rel="icon" href="img/logo.png">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body>
@@ -21,11 +24,11 @@
                     </label>
                     <input type="checkbox" id="burger" />
                     <ul>
-                        <li><a href="#intro">Intro</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#portfolio">My Works</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#intro">Интро</a></li>
+                        <li><a href="#about">О себе</a></li>
+                        <li><a href="#skills">Навыки</a></li>
+                        <li><a href="#portfolio">Мои Работы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,8 +36,9 @@
 
         <div class="header-intro" id="intro">
             <div class="container">
-                <h1>Hello!</h1>
-                <h3>My name is Michael</h3>
+                <h1>Привет!</h1>
+                <h3>Меня зовут Михаил</h3>
+                <h3>Я junior frontend developer</h3>
                 <a href="https://github.com/DryaginMihael">
                     <button>Github</button>
                 </a>
@@ -45,21 +49,29 @@
     <main>
         <section class="about" id="about">
             <div class="container">
-                <h2>About Me</h2>
+                <h2>О себе</h2>
                 <div class="desc">
                     <div class="info">
-                        <h3>Personal Information</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa omnis laudantium
-                            repellendus
-                            dolorum, atque similique quidem minima non sint optio error minus rerum ipsam temporibus at
-                            beatae delectus quo.</p>
+                        <h3>Личная информация</h3>
+                        <ul>
+                            <li><i class="fas fa-id-card-alt"></i> ФИО: Дрягин Михаил Сергеевич</li>
+                            <li><i class="fas fa-calendar-day"></i> Дата рождения: 18.11.2000</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Место жительства: г. Ярославль</li>
+                            <li><i class="fas fa-university"></i> Образование: среднее общее</li>
+                            <li><i class="fas fa-phone-square-alt"></i> Телефон: 8 (960) 537 59 12</li>
+                            <li><i class="fas fa-envelope-square"></i> Email: dryaginmihael@yandex.ru</li>
+                        </ul>
                     </div>
-                    <div class="photo"><img src="img/photo1.jpg" alt="" height="200px"></div>
+                    <div class="photo"><img src="img/photo.png" alt=""></div>
                     <div class="about-me">
-                        <h3>About me</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum neque distinctio incidunt
-                            suscipit voluptate consequuntur labore a dolores sit eum error quod non ea, laudantium ipsum
-                            tempore numquam odio animi.</p>
+                        <h3>О себе</h3>
+                        <p>В данной сфере опыта работы нет.</p>
+                        <p>Хочу работать над реальным проектом, глубже изучить уже знакомые технологии и познакомиться
+                            с новыми.</p>
+                        <p>Главное для меня - это стать частью команды, перенять опыт и самому
+                            внести ощутимый вклад в разработку.</p>
+                        <p>Планирую за 2 года стать Full Stack Middle Developer.</p>
+
                     </div>
                 </div>
             </div>
@@ -67,32 +79,31 @@
 
         <section class="skills" id="skills">
             <div class="container">
-                <h2>Skills</h2>
+                <h2>Навыки</h2>
                 <div class="skills-list">
                     <div class="hard-skills">
                         <h3>
-                            Hard Skills
+                            Хард Скиллы
                         </h3>
                         <ul>
                             <li>HTML</li>
                             <li>CSS (Sass/Scss)</li>
                             <li>JavaScript</li>
                             <li>TypeScript</li>
-                            <li>React.js</li>
+                            <li>ReactJS</li>
                             <li>Redux</li>
-                            <li>BEM!!!</li>
                             <li>Git</li>
                         </ul>
                     </div>
                     <div class="soft-skills">
                         <h3>
-                            Soft Skills
+                            Софт Скиллы
                         </h3>
                         <ul class="soft-skills">
                             <li>Ответственность</li>
                             <li>Энтузиазм</li>
-                            <li>Самоорганизованность</li>
-                            <li>Коммуникабельность</li>
+                            <li>Организованность</li>
+                            <li>Креативность</li>
                             <li>Настойчивость</li>
                         </ul>
                     </div>
@@ -103,21 +114,20 @@
         <section class="portfolio" id="portfolio">
             <div class="container">
                 <h2>
-                    My Works
+                    Мои Работы
                 </h2>
                 <div class="myworks">
                     <ul>
                         <li class="project">
                             <div class="project-hidden">
                                 <h4 class="name-project">Hazze. Fashion</h4>
-                                <p class="desc-project">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Quaerat,
-                                    excepturi? Facere iste, accusantium laborum quae nisi, ex vel ea quis possimus
-                                    debitis
-                                    hic suscipit voluptatibus modi, illum quos quia consequuntur?</p>
+                                <p class="desc-project">
+                                    Резиновая и адаптивная верстка с соблюдением семантики, анимированные элементы
+                                    (карусель, раскрывающееся меню) без использования JavaScript
+                                </p>
                                 <div class="buttons">
                                     <a href="https://dryaginmihael.github.io/hazze/"><button>View</button></a>
-                                    <a href="https://github.com/DryaginMihael/hazze/tree/master">
+                                    <a href="https://github.com/DryaginMihael/hazze">
                                         <button>Code</button>
                                     </a>
                                 </div>
@@ -125,12 +135,12 @@
                         </li>
                         <li class="project">
                             <div class="project-hidden">
-                                <h4 class="name-project">Cinema</h4>
-                                <p class="desc-project">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Quaerat,
-                                    excepturi? Facere iste, accusantium laborum quae nisi, ex vel ea quis possimus
-                                    debitis
-                                    hic suscipit voluptatibus modi, illum quos quia consequuntur?</p>
+                                <h4 class="name-project">KINO</h4>
+                                <p class="desc-project">
+                                    Кинотеатр с использованием библиотеки ReactJS в связке с Redux,
+                                    применением концепции MVC, роутингом,
+                                    адаптивной и отзывчивой версткой.
+                                </p>
                                 <div class="buttons">
                                     <a href="http://u95822.test-handyhost.ru/"><button>View</button></a>
                                     <a href="https://github.com/DryaginMihael/cinema"><button>Code</button></a>
@@ -140,14 +150,13 @@
                         <li class="project">
                             <div class="project-hidden">
                                 <h4 class="name-project">ToDo List</h4>
-                                <p class="desc-project">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Quaerat,
-                                    excepturi? Facere iste, accusantium laborum quae nisi, ex vel ea quis possimus
-                                    debitis
-                                    hic suscipit voluptatibus modi, illum quos quia consequuntur?</p>
+                                <p class="desc-project">
+                                    Todo List, написанный на ReactJS с использование TypeScript. Построен исключительно
+                                    на функциональных компонентах с использованием хуков.
+                                </p>
                                 <div class="buttons">
-                                    <a href="#"><button>View</button></a>
-                                    <a href="#"><button>Code</button></a>
+                                    <a href="https://todo-hooks-ts.web.app/"><button>View</button></a>
+                                    <a href="https://github.com/DryaginMihael/todo-list"><button>Code</button></a>
                                 </div>
                             </div>
                         </li>
