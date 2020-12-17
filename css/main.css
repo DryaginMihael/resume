@@ -145,6 +145,9 @@ body header .header-intro {
   background-size: 500px auto;
   padding-top: 150px;
 }
+body header .header-intro h3 {
+  text-transform: none;
+}
 body header .header-intro h3:first-of-type {
   margin-top: 30px;
 }
@@ -155,6 +158,16 @@ body header .header-intro button {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
+  box-sizing: border-box;
+}
+body header .header-intro button:hover {
+  box-shadow: 2px 2px 2px #171E3F;
+}
+body header .header-intro .cv {
+  background-color: #fff;
+  border: 2px solid #171E3F;
+  color: #171E3F;
+  padding: 11px 18px;
 }
 body main section {
   text-align: center;
@@ -175,6 +188,12 @@ body main .about .desc {
 }
 body main .about .desc h3 {
   margin-bottom: 20px;
+}
+body main .about .desc li {
+  margin: 10px 0;
+}
+body main .about .desc p {
+  margin: 5px 0;
 }
 body main .about .desc .photo {
   width: 200px;
@@ -320,6 +339,9 @@ body footer .social ul li.vk::before {
 }
 body footer .social ul li.instagram::before {
   background: linear-gradient(0deg, #f09433 30%, #e6683c 40%, #dc2743 50%, #cc2366 55%, #bc1888 60%);
+}
+body footer .social ul li.github::before {
+  background: #24292E;
 }
 body footer .social ul li a {
   color: #6776ED;
